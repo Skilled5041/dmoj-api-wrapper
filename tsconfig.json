@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "moduleResolution": "NodeNext",
     "declaration": true,
     "outDir": "./lib",
     "strict": true
