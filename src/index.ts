@@ -18,7 +18,7 @@ import { OrganizationsListApiResponse } from "./types/organizationsListApiRespon
 import { LanguagesListApiResponse } from "./types/languagesListApiResponse.js";
 import { JudgesListApiResponse } from "./types/judgesListApiResponse.js";
 
-class DmojAPI {
+export class DmojAPI {
 
     private readonly apiToken: string;
 
