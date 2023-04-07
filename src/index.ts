@@ -108,7 +108,7 @@ export class DmojAPI {
     }
 
     async fetchUserProfile(username: string): Promise<UserProfileApiResponse> {
-        const response = await this.fetchFromApi(`users/${username}`);
+        const response = await this.fetchFromApi(`user/${username}`);
 
         if (!response.ok) {
             throw new Error(`Error ${response.status}: ${response.statusText}`);
