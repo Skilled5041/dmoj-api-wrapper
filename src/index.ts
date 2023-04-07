@@ -164,8 +164,8 @@ export class DmojAPI {
         return (await response.json());
     }
 
-    async fetchJudgeList(): Promise<JudgesListApiResponse> {
-        const response = await this.fetchFromApi("judges");
+    async fetchJudgeList(page: number = 1): Promise<JudgesListApiResponse> {
+        const response = await this.fetchFromApi("judges", `page=${page}`);
 
         if (!response.ok) {
             throw new Error(`Error ${response.status}: ${response.statusText}`);

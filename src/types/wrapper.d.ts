@@ -30,6 +30,7 @@ export interface FetchContestParticipationFilters {
     user?: string;
     is_disqualified?: boolean;
     virtual_participation_number?: number;
+    page?: number;
 }
 
 export interface FetchProblemListFilters {
@@ -38,10 +39,12 @@ export interface FetchProblemListFilters {
     type?: string[];
     organization?: string[];
     search?: string[];
+    page?: number;
 }
 
 export interface FetchUsersListFilters {
     organization?: string[];
+    page?: number;
 }
 
 export interface FetchSubmissionsListFilters {
@@ -49,12 +52,15 @@ export interface FetchSubmissionsListFilters {
     problem?: string;
     language?: DmojLanguages[];
     result?: DmojResult[];
+    page?: number;
 }
 
 export interface FetchOrganizationsListFilters {
     is_open?: boolean;
+    page?: number;
 }
 
 export interface FetchLanguagesListFilters {
     common_name?: string;
+    page?: number;
 }
